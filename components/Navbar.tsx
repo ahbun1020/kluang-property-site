@@ -70,6 +70,30 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
           </button>
         </div>
       </div>
+
+      {mobileMenuOpen && (
+        <div className={`lg:hidden ${isScrolled ? 'bg-white' : 'bg-navy-900/95'} border-t ${isScrolled ? 'border-gray-100' : 'border-white/10'}`}>
+          <div className="container mx-auto px-4 md:px-8 py-4 flex flex-col gap-4">
+            {items.map((item) => (
+              <Link
+                key={item.n}
+                href={item.l}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`font-semibold ${isScrolled ? 'text-navy-900' : 'text-white'} hover:text-amber-500 transition-colors`}
+              >
+                {item.n}
+              </Link>
+            ))}
+            <div className="flex items-center gap-2">
+              <button onClick={() => setLang('EN')} className={`px-3 py-1 text-xs font-bold rounded-full ${lang === 'EN' ? 'bg-amber-500 text-white' : (isScrolled ? 'text-navy-900 border border-gray-200' : 'text-white border border-white/30')}`}>EN</button>
+              <button onClick={() => setLang('BM')} className={`px-3 py-1 text-xs font-bold rounded-full ${lang === 'BM' ? 'bg-amber-500 text-white' : (isScrolled ? 'text-navy-900 border border-gray-200' : 'text-white border border-white/30')}`}>BM</button>
+            </div>
+            <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded-full font-bold flex items-center gap-2 w-fit">
+              <Phone size={18} /> {lang === 'EN' ? 'Consult Now' : 'Hubungi'}
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

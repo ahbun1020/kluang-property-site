@@ -21,7 +21,7 @@ export default function PropertiesPage() {
   const subsales: Property[] = [
     {
       id: 'subsale-1',
-      title: '2 Storey Bungalow - Impiana Villa',
+      title: 'Double Storey Bungalow',
       price: 'RM 718,000',
       location: 'Bandar Seri Impian, Impiana Villa, Kluang',
       beds: 5,
@@ -34,7 +34,7 @@ export default function PropertiesPage() {
     },
     {
       id: 'subsale-2',
-      title: '2 Storey Low Cost - Taman Sri Jaya',
+      title: 'Double Storey Low Cost',
       price: 'RM 148,000',
       location: 'Taman Sri Jaya, Kluang',
       beds: 2,
@@ -47,7 +47,7 @@ export default function PropertiesPage() {
     },
     {
       id: 'subsale-3',
-      title: '2 Storey Terrace House - Taman Permata',
+      title: 'Double Storey Terrace House',
       price: 'RM 438,000',
       location: 'Taman Permata, Kluang',
       beds: 4,

@@ -117,11 +117,9 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
             <h4 className="text-navy-900 font-bold text-lg mb-6">{content.areas}</h4>
             <ul className="space-y-4">
               <li className="text-gray-500 font-bold text-xl flex items-center gap-2">
-                <MapPin className="text-amber-500" size={20} /> EUM REALTY KLUANG
+                <MapPin className="text-amber-500" size={20} /> Kluang
               </li>
-              <li className="text-gray-400 text-sm">
-                No.5,(Floor 1) Jalan Indah 1/1,Taman Kluang Indah,86000 Kluang.Johor
-              </li>
+              <li className="text-gray-400 text-sm">Johor, Malaysia</li>
             </ul>
           </div>
 
@@ -130,7 +128,11 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
             <div className="space-y-4">
               <div className="flex items-start gap-4">
                 <MapPin className="text-amber-500 mt-1" size={20} />
-                <span className="text-gray-500">Kluang, Johor, Malaysia</span>
+                <div className="text-gray-500">
+                  <div className="font-semibold">EUM REALTY KLUANG</div>
+                  <div>No.5,(Floor 1) Jalan Indah 1/1,</div>
+                  <div>Taman Kluang Indah, 86000 Kluang, Johor</div>
+                </div>
               </div>
               <div className="flex items-start gap-4">
                 <MessageCircle className="text-amber-500 mt-1" size={20} />
