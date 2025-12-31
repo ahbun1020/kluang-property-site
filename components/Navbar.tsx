@@ -26,6 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
       { n: 'Properties', l: '#properties' },
       { n: 'About', l: '/about' },
       { n: 'Guide', l: '/guide' },
+      { n: 'Services', l: '/services' },
       { n: 'Loan Tools', l: '/loan-tools' },
       { n: 'Contact', l: '#contact' },
     ],
@@ -34,6 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
       { n: 'Hartanah', l: '#properties' },
       { n: 'Tentang', l: '/about' },
       { n: 'Panduan', l: '/guide' },
+      { n: 'Perkhidmatan', l: '/services' },
       { n: 'Alat Pinjaman', l: '/loan-tools' },
       { n: 'Hubungi', l: '#contact' },
     ]

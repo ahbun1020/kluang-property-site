@@ -40,6 +40,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
         { label: 'Kluang District Analysis', href: '/districts/kluang-town' },
         { label: 'About', href: '/about' },
         { label: 'Guide', href: '/guide' },
+        { label: 'Services', href: '/services' },
         { label: 'Loan Tools', href: '/#loan-readiness' },
         { label: 'FAQ', type: 'faq' }
       ],
@@ -57,6 +58,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
         { label: 'Analisis Daerah Kluang', href: '/districts/kluang-town' },
         { label: 'Tentang', href: '/about' },
         { label: 'Panduan', href: '/guide' },
+        { label: 'Perkhidmatan', href: '/services' },
         { label: 'Alat Pinjaman', href: '/#loan-readiness' },
         { label: 'Soalan Lazim', type: 'faq' }
       ],

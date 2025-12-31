@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, ShieldCheck, Users, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
 
 interface BioSectionProps {
   lang: 'EN' | 'BM';
@@ -83,7 +83,6 @@ const BioSection: React.FC<BioSectionProps> = ({ lang }) => {
               </div>
             </motion.div>
 
-            {/* Background Accent */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-navy-900/5 rounded-full -z-10 blur-3xl"></div>
           </div>
 
@@ -138,9 +137,12 @@ const BioSection: React.FC<BioSectionProps> = ({ lang }) => {
               </div>
             </div>
 
-            <button className="bg-navy-900 hover:bg-navy-800 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all hover:gap-4 active:scale-95 shadow-lg shadow-navy-900/10">
+            <Link
+              href="/services"
+              className="bg-navy-900 hover:bg-navy-800 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all hover:gap-4 active:scale-95 shadow-lg shadow-navy-900/10"
+            >
               {content.cta}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
